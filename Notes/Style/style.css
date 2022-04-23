@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+header {
+    height: 5vh;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: rgb(250, 160, 160);
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    height: 80vh;
+}
+
+.menu {
+    width: 15vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.link,
+a:visited,
+.delete {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.delete {
+    background-color: rgb(250, 160, 160);
+    padding: 5px 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.link:hover,
+.delete:hover {
+    color: red;
+    transition: color .3s;
+}
+
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    padding: 20px;
+    text-align: center;
+    text-shadow: 4px 2px 4px rgba(194, 150, 150, 1);
+}
+
+.content {
+    background-color: #ddd;
+    width: 85vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.con {
+    width: 100%;
+    height: calc(100% - 28px);
+    column-gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+}
+
+.Container {
+    width: 80%;
+    height: calc(100% - 28px);
+    background-color: #fff;
+    padding: 10px 50px;
+}
+
+.formContainer {
+    display: flex;
+    align-items: center;
+}
+
+form li {
+    list-style: none;
+}
+
+.createFormInput,
+textarea,
+select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 7px;
+    margin: 0px;
+    transition: all 0.40s ease-in-out;
+    -moz-transition: all 0.40s ease-in-out;
+    -ms-transition: all 0.40s ease-in-out;
+    -o-transition: all 0.40s ease-in-out;
+    outline: none;
+}
+
+form input[type=text]:focus,
+form textarea:focus,
+form select:focus {
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+
+form label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    color: #222;
+    font-weight: normal;
+}
+
+.createFormInput {
+    width: 100%;
+}
+
+form textarea {
+    height: 100px;
+    width: 100%;
+    resize: none;
+}
+
+.formSubmit {
+    background: rgb(250, 160, 160);
+    border: 1px solid rgb(252, 130, 130);
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.formSubmit:hover {
+    background: rgb(255, 139, 139);
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+
+}
+
+.anotherListContainer {
+    overflow: auto;
+    width: 100%;
+    max-height: 65%;
+    border: 3px solid rgb(0, 255, 255);
+}
+
+.anotherListContainer::-webkit-scrollbar {
+    display: none;
+}
+
+table {
+    table-layout: fixed;
+}
+
+.headerTable {
+    position: sticky;
+    top: 0px;
+    background-color: cyan;
+    width: 100%;
+    padding: 5px;
+}
+
+.tableContent {
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th,
+td>.headerTable {
+    text-align: center;
+}
+
+.tableContent tr:nth-child(even) {
+    background-color: rgb(212, 255, 255);
+    ;
+    height: 10px;
+}
+
+.sortCon {
+    display: flex;
+}
+
+.sort {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.sortLeft,
+.sortRight {
+    width: 50%;
+}
+
+.sortRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: red;
+}
+
+.showContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.id {
+    width: 10%;
+    height: 10%;
+    background-color: rgb(0, 255, 255);
+}
+
+.title {
+    width: 69%;
+    height: 10%;
+    background-color: rgb(0, 255, 255);
+}
+
+.date {
+    width: 20%;
+    height: 10%;
+    background-color: rgb(0, 255, 255);
+}
+
+.description {
+    width: 100%;
+    height: calc(80% - 20px);
+    padding: 10px;
+    background-color: rgb(212, 255, 255);
+    overflow: auto;
+}
+
+.notes {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: red;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 5px;
+    margin: 3px;
+    background-color: rgb(0, 255, 255);
+    border: 1px solid rgb(0, 255, 255);
+    min-width: 25px;
+    border-radius: 22%;
+}
+
+button:hover {
+    background-color: rgb(212, 255, 255);
+}
+
+.paginationDiv {
+    display: flex;
+}
+
+footer {
+    height: calc(10vh + 15px);
+    width: 100%;
+    border-top: 1px solid black;
+    background-color: rgb(250, 160, 160);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    margin-top: 10px;
+}
+
+footer>a {
+    font-size: 25px;
+    padding: 5px;
+}
